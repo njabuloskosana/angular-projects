@@ -2,3 +2,6 @@
 <p>Sever with ID {{serverId}} is {{serverStatus}}</p>
 <p>Sever with ID {{'String example'}} is {{'Just a string expression but we can also call a method that returns a string'}}</p>
 <p>{{getServerStatus()}}</p>
+<p>Directives 2</p>
+<p [ngStyle]="{backgroundColor:getColor()}" [ngClass]="{online: serverStatus ==='online'}">
+    {{'server'}} with ID {{serverId}} is {{getServerStatus}}</p>
