@@ -12,5 +12,7 @@
 </div>
 
 <hr>
-<p>My Secrete Paragraph, why doesnt html have auto correct!</p>
-<app-value></app-value>
+<button class="btn btn-primary" (click)="buttonClick()">Display Details</button>
+<p ngIf="showSecret">My Secrete Paragraph, why doesnt html have auto correct!</p>
+<div *ngFor="let logItem of log" [ngStyle]="{backgroundColor: logItem >= 5 ? 'blue' : 'transparent'} [ngClass]={'white-text': logItem>=5}">{{logItem}}</div>
+
